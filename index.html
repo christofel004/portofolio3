@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christofel Padanga - Portofolio Pribadi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5KwQUMhNKlX7pYxW3L/zL7uFv4Y2l1m5J6A2zQd4J6H0E4P0V5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css" />
+    <style>
+      body {
+        background-color: #343a40; /* Dark background for the body */
+      }
+      .text-white {
+        color: #fff !important;
+      }
+      .container.py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+      }
+      .progress {
+        height: 20px; /* Adjust progress bar height */
+        margin-bottom: 15px; /* Spacing between progress bars */
+      }
+      .progress-bar {
+        line-height: 20px; /* Vertically align text in progress bar */
+        color: #fff; /* Ensure text is white */
+      }
+
+      /* Custom styles for home section layout */
+      #home .row {
+        align-items: center; /* Vertically center content in the row */
+      }
+      #home .text-content {
+        text-align: left; /* Align text to the left */
+      }
+      #home .image-content {
+        text-align: right; /* Align image to the right */
+      }
+      /* --- PERUBAHAN PENTING DI SINI --- */
+      #home img {
+        max-width: 70%; /* Mengurangi lebar maksimum gambar menjadi 70% dari kolomnya */
+        height: auto;
+        border-radius: 8px; /* Optional: add some rounded corners to the image */
+        margin-left: auto; /* Memastikan gambar tetap rata kanan di dalam kolomnya */
+        display: block; /* Penting untuk margin: auto bekerja dengan benar */
+      }
+      /* --- AKHIR PERUBAHAN --- */
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Christofel Padanga</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutMe.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Galery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Kontak.html">Kontak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Proyek.html">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Testimoni.html">Sertifikat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section id="home" class="py-5 text-center mt-5">
+        <div class="container">
+          <br />
+          <div class="row align-items-center">
+            <div class="col-md-6 text-content">
+              <h1
+                class="display-4 text-white"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
+                Halo, Saya christofel padanga
+              </h1>
+              <p
+                class="text-white"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+              >
+                Selamat datang di portofolio pribadi saya! Saya adalah seorang
+                mahasiswa yang bersemangat dalam membangun aplikasi web
+                interaktif dan menciptakan desain yang menarik. Dengan
+                pengalaman yang saya dapat,saya berkomitmen untuk menghadirkan
+                solusi yang inovatif dan efektif.
+              </p>
+            </div>
+            <div class="col-md-6 image-content">
+              <img
+                src="istho.jpeg"
+                alt="Christofel Padanga"
+                class="img-fluid"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+          <p>&copy; 2025 Christofel Padanga. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
