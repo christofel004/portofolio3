@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christofel Padanga - Portofolio Pribadi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5KwQUMhNKlX7pYxW3L/zL7uFv4Y2l1m5J6A2zQd4J6H0E4P0V5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="home.css" />
+    <style>
+      body {
+        background-color: #343a40; /* Dark background for the body */
+        color: #ecf0f1;
+      }
+
+      .text-white {
+        color: #fff !important;
+      }
+
+      /* Pastikan card-img-top memiliki tinggi yang konsisten dan memenuhi ruang */
+      .card-img-top {
+        height: 200px; /* Atur tinggi tetap untuk semua gambar */
+        object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+      }
+
+      .card-body {
+        flex-grow: 1; /* Memastikan card-body mengambil sisa ruang yang tersedia */
+      }
+
+      .card-footer {
+        margin-top: auto; /* Mendorong footer ke bagian bawah kartu */
+      }
+
+      #portfolio {
+        padding-top: 80px; /* Memberi ruang agar tidak tertutup navbar */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Christofel Padanga</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AboutMe.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Galery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Kontak.html">Kontak</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Proyek.html"
+                >Project</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Testimoni.html">Sertifikat</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+    <section id="portfolio" class="py-5">
+      <div class="container">
+        <h2
+          class="text-center mb-5 text-white"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
+          Project Saya
+        </h2>
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center"
+        >
+          <div class="col d-flex">
+            <div
+              class="card h-100 shadow-sm"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <img
+                src="figma.jpeg"
+                class="card-img-top"
+                alt="Gambar Proyek Figma"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-dark">Figma</h5>
+                <p class="card-text text-secondary">
+                  Ini adalah contoh desain UI/UX yang saya buat menggunakan
+                  Figma, menunjukkan kemampuan saya dalam perancangan antarmuka
+                  yang intuitif dan menarik.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="https://www.figma.com/design/ktrlhA6GyRsiiDqftORy42/Untitled?node-id=0-1&p=f&t=natkW3W7qVfagAou-0"
+                    target="_blank"
+                    class="btn btn-primary btn-sm"
+                    ><i class="fas fa-search"></i> Selengkapnya</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div
+              class="card h-100 shadow-sm"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <img
+                src="expo.jpeg"
+                class="card-img-top"
+                alt="Gambar Proyek Website EXPO"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-dark">Website EXPO</h5>
+                <p class="card-text text-secondary">
+                  Situs web ini dirancang untuk acara EXPO, menampilkan
+                  informasi penting, jadwal, dan galeri untuk memberikan
+                  pengalaman terbaik bagi pengunjung.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="https://tokoherbavita.store"
+                    target="_blank"
+                    class="btn btn-primary btn-sm"
+                    ><i class="fas fa-search"></i> Selengkapnya</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div
+              class="card h-100 shadow-sm"
+              data-aos="fade-right"
+              data-aos-duration="1500"
+            >
+              <img
+                src="elon .png"
+                class="card-img-top"
+                alt="Gambar Proyek Elon Musk Tech"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title text-dark">
+                  10 Teknologi Besutan Elon Musk
+                </h5>
+                <p class="card-text text-secondary">
+                  Ini adalah teknologi-teknologi Besutan Elon Musk, terbaru Chip
+                  yang Ditanam di Otak Manusia.
+                </p>
+                <div class="mt-auto">
+                  <a
+                    href="https://www.beritasatu.com/ototekno/2797003/10-teknologi-besutan-elon-musk-terbaru-chip-yang-ditanam-di-otak-manusia"
+                    target="_blank"
+                    class="btn btn-primary btn-sm"
+                    ><i class="fas fa-search"></i> Selengkapnya</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </section>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+      <div class="container">
+        <p>&copy; 2025 Christofel Padanga. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
