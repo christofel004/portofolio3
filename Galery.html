@@ -24,18 +24,18 @@
         --light-text: #f8f9fa; /* Warna teks terang */
         --accent-color: #0d6efd; /* Warna aksen biru Bootstrap default */
         --card-bg: #343a40; /* Warna background kartu/item galeri */
-        --shadow-color: rgba(0, 0, 0, 0.5); /* Warna bayangan lebih gelap */
+        --shadow-color: rgba (0, 0, 0, 0.5); /* Warna bayangan lebih gelap */
       }
 
       body {
-        background-color: var(--dark-bg);
-        color: var(--light-text);
+        background-color: var (--dark-bg);
+        color: var (--light-text);
         font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       }
 
       .navbar-brand,
       .nav-link {
-        color: var(--light-text) !important;
+        color: var (--light-text) ! important;
       }
 
       .navbar-toggler-icon {
@@ -50,57 +50,57 @@
 
       /* Tambahkan CSS ini untuk menjaga warna putih pada nav-link aktif */
       .navbar-dark .navbar-nav .nav-link.active {
-        color: var(--light-text) !important;
+        color: var (--light-text) ! important;
         font-weight: bold;
       }
 
       #portfolio {
-        padding-top: 100px; /* Lebih banyak padding agar tidak tertutup navbar fixed */
-        padding-bottom: 80px;
+        padding-top: 100 px; /* Lebih banyak padding agar tidak tertutup navbar fixed */
+        padding-bottom: 80  px;
       }
 
       h2 {
-        font-size: 2.8rem;
+        font-size: 2.8 rem;
         font-weight: 700;
-        letter-spacing: 1px;
-        color: var(--accent-color); /* Warna judul yang lebih menonjol */
-        margin-bottom: 3rem;
-        text-shadow: 2px 2px 4px var(--shadow-color);
+        letter-spacing: 1 px;
+        color: var (--accent-color); /* Warna judul yang lebih menonjol */
+        margin-bottom: 3 rem;
+        text-shadow: 2 px 2 px 4 px var (--shadow-color);
       }
 
       /* Gallery Specific Styling */
       .gallery-item {
         position: relative;
         overflow: hidden;
-        border-radius: 12px; /* Sudut lebih membulat */
-        box-shadow: 0 8px 20px var(--shadow-color); /* Bayangan lebih dramatis */
-        transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
-        background-color: var(--card-bg); /* Background item galeri */
-        border: 1px solid rgba(255, 255, 255, 0.1); /* Sedikit border */
+        border-radius: 12 px; /* Sudut lebih membulat */
+        box-shadow: 0 8 px 20 px var (--shadow-color); /* Bayangan lebih dramatis */
+        transition: transform 0.4 s ease-in-out, box-shadow 0.4s ease-in-out;
+        background-color: var (--card-bg); /* Background item galeri */
+        border: 1 px solid rgba (255, 255, 255, 0.1); /* Sedikit border */
         /* Tinggi gambar untuk desktop, akan di-override di media query untuk mobile */
-        height: 350px; /* Tinggi dasar item galeri, sedikit lebih besar dari sebelumnya */
+        height: 350 px; /* Tinggi dasar item galeri, sedikit lebih besar dari sebelumnya */
       }
 
       .gallery-item.large-height {
-        height: 450px; /* Tinggi spesifik untuk foto yang "agak besar" */
+        height: 450 px; /* Tinggi spesifik untuk foto yang "agak besar" */
       }
 
       .gallery-item img {
-        width: 100%;
-        height: 100%; /* Memastikan gambar mengisi item galeri */
+        width: 100 %;
+        height: 100 %; /* Memastikan gambar mengisi item galeri */
         object-fit: cover; /* Penting: Memastikan gambar mengisi ruang tanpa stretch */
         display: block;
-        transition: transform 0.6s ease-in-out;
-        border-radius: 12px 12px 0 0; /* Sudut atas membulat sesuai item */
+        transition: transform 0.6 s ease-in-out;
+        border-radius: 12 px 12 px 0 0; /* Sudut atas membulat sesuai item */
       }
 
       .gallery-item:hover {
-        transform: translateY(-8px) scale(1.02); /* Sedikit naik dan sedikit zoom */
-        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6); /* Bayangan lebih intens saat hover */
+        transform: translateY (-8 px) scale (1.02); /* Sedikit naik dan sedikit zoom */
+        box-shadow: 0 12 px 25 px rgba (0, 0, 0, 0.6); /* Bayangan lebih intens saat hover */
       }
 
       .gallery-item:hover img {
-        transform: scale(1.08); /* Zoom gambar lebih banyak */
+        transform: scale (1.08); /* Zoom gambar lebih banyak */
       }
 
       .gallery-overlay {
@@ -108,29 +108,29 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background: linear-gradient(
-          to top,
-          rgba(0, 0, 0, 0.9) 0%,
-          rgba(0, 0, 0, 0) 100%
+        background: linear-gradient (
+          totop,
+          rgba (0, 0, 0, 0.9) 0 %,
+          rgba (0, 0, 0, 0) 100 %
         ); /* Gradasi lebih halus */
-        color: var(--light-text);
-        padding: 20px 15px; /* Padding lebih banyak */
-        transform: translateY(100%);
-        transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+        color: var (--light-text);
+        padding: 20 px 15 px; /* Padding lebih banyak */
+        transform: translateY (100 %);
+        transition: transform 0.5 s ease-out, opacity 0.5 s ease-out;
         text-align: center;
         opacity: 0;
-        font-size: 1.1em; /* Ukuran font lebih besar */
+        font-size: 1.1 em; /* Ukuran font lebih besar */
         font-weight: 600; /* Font lebih tebal */
-        border-radius: 0 0 12px 12px; /* Sudut bawah membulat */
+        border-radius: 0 0 12 px 12 px; /* Sudut bawah membulat */
       }
 
       .gallery-item:hover .gallery-overlay {
-        transform: translateY(0);
+        transform: translateY (0);
         opacity: 1;
-      }
+       }
 
       /* Responsiveness adjustments for smaller screens */
-      @media (max-width: 767.98px) {
+      @ media (max-width: 767.98px) {
         .col-12.col-md-4,
         .col-12.col-md-6,
         .col-12.col-md-8,
@@ -139,17 +139,17 @@
         .col-12.col-lg-6,
         .col-12.col-lg-8 {
           /* Pastikan semua item mengambil lebar penuh di layar mobile */
-          width: 100%;
+          width: 100 %;
         }
         .gallery-item,
         .gallery-item.large-height {
-          height: 280px; /* Tinggi item galeri yang konsisten untuk mobile, sedikit lebih besar */
+          height: 280 px; /* Tinggi item galeri yang konsisten untuk mobile, sedikit lebih besar */
         }
       }
 
       footer {
-        background-color: var(--dark-bg);
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        background-color: var (--dark-bg);
+        border-top: 1 px solid rgba (255, 255, 255, 0.1);
       }
     </style>
   </head>
